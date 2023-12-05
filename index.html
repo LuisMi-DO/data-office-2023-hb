@@ -15,16 +15,24 @@
 		width: 100vw;
 		height: 100vh;
 	}
+	@keyframes do-selector-color {
+		0% { background-color: #AB80FF; }
+		50% { background-color: #BB80FF; }
+		100% { background-color: #AB80FF; }
+	}
 	.do-selector {
 		font-family: Georgia;
 		position: absolute;
-		background-color: #AB80FFFF;
-		color: #F2EBE3FF;
+		background-color: #AB80FF;
+		animation: do-selector-color 7s infinite linear;
+		box-shadow: #AB80FF33 -5px 5px;
+		color: #F2EBE3;
 		width: 9rem;
 		height: 8rem;
 		right: 0px;
 		top: 0px;
 		border-radius: 0 0 0 100%;
+		cursor: pointer;
 	}
 	.do-selector div {
 		padding: 1rem;
